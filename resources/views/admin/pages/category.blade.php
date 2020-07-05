@@ -2,7 +2,7 @@
 @section('main')
 
 
-<div class="page-content">
+            <div class="page-content">
                     <div class="container-fluid">
                         
                         <!-- start page title -->
@@ -23,7 +23,7 @@
 					<span aria-hidden="true">&times;</span>
 					</button>
 					</div>	
-				@endif	
+				@endif	    
 				@if(Session::has('warning'))
 					<div class="alert alert-warning alert-dismissible fade show" role="alert">
 					{{Session::get('warning')}}
@@ -132,23 +132,34 @@
                                                         <label for="image">Choose Image</label>
                                                         <input type="file" id="image" required="" name="image" type="text" class="form-control">
                                                     </div>
-                                           <div class="form-group">
+                                                     <div class="form-group">
                                                         <label class="control-label">Status</label>
                                                         <select class="form-control"   required=""  name="Status">
                                                       <option value="">~~SELECT~~</option>
                                                       <option value='0'>Active</option>
 													  <option value='1'>Inactive</option> 
-                              </select>
+                                                        </select>
                                                     </div>
+                                                    <div class="form-group">
+                                                        <label for="name">Meta Title</label>
+                                                        <input  name="meta_title" required="" type="text" class="form-control">
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="name">Meta Keyword</label>
+                                                        <input  name="keyword" required="" type="text" class="form-control">
+                                                    </div>
+
+
                                                     <div class="form-group">
                                                         <label for="cartdesc">Product Description</label>
                                                         <textarea class="form-control" required="" name="desc" id="cartdesc" rows="5"></textarea>
                                                     </div>
                                                   
+                                                                    
+                                            </div><br> <!-- /form-group-->
                                             
-                    </div><br> <!-- /form-group-->
-                    
-                    </div> <!-- /form-group-->
+                                            </div> <!-- /form-group-->
 									  </div>
 									  <div class="modal-footer">
 										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

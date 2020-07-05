@@ -19,12 +19,18 @@ public function addcategorys (Request $req){
                $image = $req->input('image');
                $status = $req->input('Status');
                $desc = $req->input('desc');
+               $metaTitle = $req->input('meta_title');
+               $metaKeyword = $req->input('keyword');
+               
                
                $categories = new category();
                $categories->cat_name = $name;
                $categories->cat_image = $image;
                $categories->cat_is_active = $status;
                $categories->cat_description = $desc;
+               $categories->cat_meta_title = $metaTitle;
+               $categories->cat_meta_keyword = $metaKeyword;
+
                if( $categories->save()) {  
                
                return redirect('/category')->with('message', 'Data Saved');

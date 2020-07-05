@@ -8,8 +8,7 @@ class Category extends Model
 {
     protected $table ='categories';
 
-    protected $fillable = ['cat_name','cat_image','cat_is_active ','cat_description','cat_url','cat_meta_title','cat_meta_keyword 
-    ','cat_meta_des'];
+    protected $fillable = ['cat_name','cat_image','cat_is_active ','cat_description','cat_meta_title','cat_meta_keyword '];
 
-    protected $primerykey = 'cat_id ';
+    protected $primarykey = 'cat_id ';
 }
