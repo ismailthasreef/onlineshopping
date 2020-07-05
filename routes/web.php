@@ -15,9 +15,9 @@ use App\Discount;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('admin', function () {
     return view('admin.pages.dashboard');
@@ -73,3 +73,8 @@ Route::post('/insertitem','ProatributeController@insertitems');
 Route::post('/adddiscount','DiscountController@adddiscounts');
 Route::get('deletediscount/{id}','DiscountController@deletediscounts');
 
+
+
+Route::get('/', function () {
+  return view('usertemplate.pages.index');
+});
