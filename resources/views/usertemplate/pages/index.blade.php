@@ -4,6 +4,8 @@
 
 This page took {{ (microtime(true) - LARAVEL_START) }} seconds to render
 
+<!-- added user part -->
+
 <div class="main-banner-slider">
 			<div class="container">
 				<div class="row">
