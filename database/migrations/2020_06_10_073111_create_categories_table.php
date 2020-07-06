@@ -19,7 +19,6 @@ class CreateCategoriesTable extends Migration
             $table->text('cat_image');
             $table->boolean('cat_is_active');  
             $table->string('cat_description');
-            $table->string('cat_url');
             $table->string('cat_meta_title');
             $table->string('cat_meta_keyword');
             $table->string('cat_meta_des');
