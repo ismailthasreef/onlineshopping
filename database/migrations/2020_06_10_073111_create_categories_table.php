@@ -17,7 +17,7 @@ class CreateCategoriesTable extends Migration
             $table->bigIncrements('cat_id');
             $table->string('cat_name');
             $table->text('cat_image');
-            $table->boolean('cat_is_active');  
+            $table->boolean('cat_is_active');
             $table->string('cat_description');
             $table->string('cat_meta_title');
             $table->string('cat_meta_keyword');
